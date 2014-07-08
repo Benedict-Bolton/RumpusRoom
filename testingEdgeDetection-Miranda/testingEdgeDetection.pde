@@ -10,6 +10,7 @@ AudioPlayer shutter;
 boolean curtains=false;
 boolean space = false;
 boolean edge =false;
+boolean invert = false;
 
 /**
  * Getting Started with Capture.
@@ -57,7 +58,7 @@ void draw() {
 
   image(cam, 0, 0);
   if (edge) {
-    
+
     loadPixels();
     float up ;
     float down;
@@ -80,6 +81,10 @@ void draw() {
         if (val>thresh) {
           val=255;
         }
+        if (invert) {
+          val= 255-val;
+        }
+
         temp[y*640+x]=color(val);
       }
     }
@@ -87,18 +92,16 @@ void draw() {
       for (int x= 1; x < 638; x++) {
         pixels[y*640+x]=temp[y*640+x];
       }
-      
-          updatePixels();
+
+      updatePixels();
     }
-
-
   }
 
 
-  if (curtains){
+  if (curtains) {
     image(loadImage("curtains.png"), 0, 0);
   }
-  if (space){
+  if (space) {
     image(loadImage("space.png"), 0, 0);
   }
   // The following does the same as the above image() line, but 
@@ -130,6 +133,9 @@ void keyPressed() {
     edge=!edge;
     space=false;
     curtains=false;
+  }
+  if (keyCode == 73) {
+    invert=!invert;
   }
   if (keyCode == 67) {
     curtains=!curtains;
