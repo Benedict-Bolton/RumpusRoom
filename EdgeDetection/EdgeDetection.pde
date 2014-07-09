@@ -5,10 +5,41 @@ PImage edges;
 
 float[][] cols = new float[9][3]; 
 
+//camera stuff
+double time = millis();
+import processing.video.*;
+int imgCount=0;
+Capture cam;
+
+int thresh=10;
+
+
 
 
 void setup() {
-  
+  String[] cameras = Capture.list();
+  if (cameras == null){
+    println("Failed to retrieve the list of available cameras, will try the default...");
+    cam = new Capture(this, 640, 480);
+  }
+  if (cameras.length == 0) {
+    println("There are no cameras available for capture.");
+    exit();
+  } else {
+    println("Available cameras:");
+    for (int i = 0; i < cameras.length; i++) {
+      println(cameras[i]);
+    }
+    // The camera can be initialized directly using an element
+    // from the array returned by list():
+    cam = new Capture(this, cameras[0]);
+    // Or, the settings can be defined based on the text in the list
+    //cam = new Capture(this, 640, 480, "Built-in iSight", 30);
+
+    // Start capturing the images from the camera
+    cam.start();
+  }
+
   img = loadImage("appple.jpg");
   edges = loadImage("appple.jpg");
   size(img.width,img.height);
