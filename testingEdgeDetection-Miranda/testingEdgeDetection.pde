@@ -11,7 +11,9 @@ boolean curtains=false;
 boolean space = false;
 boolean edge =false;
 boolean invert = false;
-
+boolean bw = false;
+boolean tint = false;
+boolean colorEdges = false;
 /**
  * Getting Started with Capture.
  * 
@@ -52,12 +54,25 @@ void setup() {
 }
 void draw() {
   color[]temp=new color[480*640];
+  color[]temp2=new color[480*640];
+  if (tint) {
+    int[] rgb= {
+      thresh * 10, (thresh * 10) -150, (thresh * 10)-255
+    };
+    for (int i=0; i< rgb.length; i++) {
+      if (rgb[i] >255 || rgb[i]<0) {
+        rgb[i]=50;
+      }
+    }
+    tint(rgb[0], rgb[1], rgb[2]);
+  } else
+    tint(255);
   if (cam.available() == true) {
     cam.read();
   }
 
   image(cam, 0, 0);
-  if (edge) {
+  if (edge || bw) {
 
     loadPixels();
     float up ;
@@ -68,33 +83,48 @@ void draw() {
     for (int y = 1; y < 478; y++) {
       for (int x= 1; x < 638; x++) {
         color w= pixels[y*640+x];
-        pixels[y*640+x]=color((int)(red(w)+green(w)+blue(w)) / 3);
+        w=color((int)(red(w)+green(w)+blue(w)) / 3);
+        if (bw) {
+          w=color(red(w)-((100-(red(w))*thresh)));
+        }
+        temp2[y*640+x]=w;
       }
+    }
+
+    if (edge) {
+      for (int y = 1; y < 478; y++) {
+        for (int x= 1; x < 638; x++) {
+          up = red(temp2[(y*640)+(x-1)]);
+          down = red(temp2[y*640+(x+1)]);
+          left = red(temp2[((y-1)*640)+x]);
+          right = red(temp2[((y+1)*640)+x]); 
+          val=(int)sqrt(sq(left-right)+sq(up-down));
+          if (val>thresh) {
+            val=255;
+          }
+          if (invert) {
+            val= 255-val;
+          }
+
+          temp[y*640+x]=color(val);
+        }
+      }
+    }
+    if (bw) {
+      temp=temp2;
     }
     for (int y = 1; y < 478; y++) {
       for (int x= 1; x < 638; x++) {
-        up = red(pixels[(y*640)+(x-1)]);
-        down = red(pixels[y*640+(x+1)]);
-        left = red(pixels[((y-1)*640)+x]);
-        right = red(pixels[((y+1)*640)+x]); 
-        val=(int)sqrt(sq(left-right)+sq(up-down));
-        if (val>thresh) {
-          val=255;
+        if (!colorEdges) {
+          pixels[y*640+x]=temp[y*640+x];
+        } else {
+          if (red(temp[y*640+x]) != 255) {
+            pixels[y*640+x]=temp[y*640+x];
+          }
         }
-        if (invert) {
-          val= 255-val;
-        }
-
-        temp[y*640+x]=color(val);
       }
     }
-    for (int y = 1; y < 478; y++) {
-      for (int x= 1; x < 638; x++) {
-        pixels[y*640+x]=temp[y*640+x];
-      }
-
-      updatePixels();
-    }
+    updatePixels();
   }
 
 
@@ -104,6 +134,8 @@ void draw() {
   if (space) {
     image(loadImage("space.png"), 0, 0);
   }
+
+
   // The following does the same as the above image() line, but 
   // is faster when just drawing the image without any additional 
   // resizing, transformations, or tint.
@@ -122,28 +154,36 @@ void keyPressed() {
     while (millis () < time+1000) {
       image(loadImage(currentImg), 0, 0);
     }
-  }
-  if (keyCode == 38 ) {
+  } else if (keyCode == 38 ) {
     thresh--;
-  }
-  if (keyCode == 40 ) {
+  } else if (keyCode == 40 ) {
     thresh ++;
-  }
-  if (keyCode == 69) {
+  } else if (keyCode == 69) {
+    thresh=10;
     edge=!edge;
     space=false;
     curtains=false;
-  }
-  if (keyCode == 73) {
+    bw=false;
+  } else if (keyCode == 73) {
     invert=!invert;
-  }
-  if (keyCode == 67) {
+  } else if (keyCode == 67) {
     curtains=!curtains;
     space=false;
-  }
-  if (keyCode == 83) {
+  } else if (keyCode == 83) {
     space=!space;
     curtains=false;
+  } else if (keyCode == 66) {
+    edge=false;
+    tint=false;
+    colorEdges = false;
+    thresh=1;
+    bw=!bw;
+  } else if (keyCode == 79) {
+    colorEdges = !colorEdges;
+  } else if (keyCode == 84) {
+    thresh=10;
+    tint = !tint ;
+    bw=false;
   }
   keyCode = 0;
 }
