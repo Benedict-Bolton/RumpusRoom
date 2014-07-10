@@ -1,4 +1,35 @@
-RumpusRoom
-=========
+<html>
 
+<head>
+<h1>
+RumpusRoom
+</h1><br>
 CSTUY SHIP Stewards General Files
+</head>
+
+<br><br>
+
+<body>
+<h1>
+Log
+</h1><br>
+
+<b>MON 7/7/14</b><br>
+Introductions<br>
+Project Ideas<br><br>
+
+<b>TUES 7/8/14</b><br>
+EDGE DETECTION<br>
+sqrt((left-right)^2+(up-down)^2)<br>
+or matrix<br><br>
+
+<b>WEDS 7/9/14</b><br>
+BLOB RECOGNITION<br>
+MOTION DETECTION<br>
+http://www.cs.northwestern.edu/~ago820/cs395/Papers/Heckbert_1987.pdf<br><br>
+
+<b>THURS 7/10/14</b><br><br>
+Created log<br><br>
+
+</body>
+</html>
