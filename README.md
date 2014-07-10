@@ -3,7 +3,7 @@
 <head>
 <h1>
 RumpusRoom
-</h1><br>
+</h1>
 CSTUY SHIP Stewards General Files
 </head>
 
@@ -12,7 +12,7 @@ CSTUY SHIP Stewards General Files
 <body>
 <h1>
 Log
-</h1><br>
+</h1>
 
 <b>MON 7/7/14</b><br>
 Introductions<br>
@@ -29,7 +29,8 @@ MOTION DETECTION<br>
 http://www.cs.northwestern.edu/~ago820/cs395/Papers/Heckbert_1987.pdf<br><br>
 
 <b>THURS 7/10/14</b><br>
-Created log<br><br>
+Created log<br>
+Started work on big projects<br><br>
 
 </body>
 </html>
