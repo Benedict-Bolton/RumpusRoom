@@ -7,7 +7,7 @@ RumpusRoom
 CSTUY SHIP Stewards General Files
 </head>
 
-<br><br>
+<br>
 
 <body>
 <h1>
@@ -28,7 +28,7 @@ BLOB RECOGNITION<br>
 MOTION DETECTION<br>
 http://www.cs.northwestern.edu/~ago820/cs395/Papers/Heckbert_1987.pdf<br><br>
 
-<b>THURS 7/10/14</b><br><br>
+<b>THURS 7/10/14</b><br>
 Created log<br><br>
 
 </body>
