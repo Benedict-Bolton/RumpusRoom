@@ -32,5 +32,8 @@ http://www.cs.northwestern.edu/~ago820/cs395/Papers/Heckbert_1987.pdf<br><br>
 Created log<br>
 Started work on big projects<br><br>
 
+<b>FRI 7/11/14</b><br>
+Continued work on big projects<br><br>
+
 </body>
 </html>
