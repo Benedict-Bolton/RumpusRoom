@@ -35,5 +35,8 @@ Started work on big projects<br><br>
 <b>FRI 7/11/14</b><br>
 Continued work on big projects<br><br>
 
+<h1>Other Stuff</h1>
+<a href = "https://github.com/SingleDreamer/2014_SHIP_AR"> Augmented Reality Project </a>
+
 </body>
 </html>
