@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoBooth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}" />
+<style>
+body {
+    background-image:url('{{ url_for('static', filename='img/navy.jpg') }}');
+background-repeat:repeat;
+}
+
+
+</style>
+<link rel="shortcut icon" href="" >
+
+    <script src="{{ url_for('static', filename='js/vendor/custom.modernizr.js') }}"></script>
+  </head>
+  <body>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+    <!--________________________________________________________________________-->
+    
+      <!-- Header and Nav -->
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="/">
+<img src="https://mail.google.com/mail/u/0/?ui=2&ik=7111227fb7&view=fimg&th=14732dd80f0fc642&attid=0.1&disp=inline&realattid=f_hxl7wp2y0&safe=1&attbid=ANGjdJ9YQ3GqWhFsFbtx-HJ9-LeEdg_DA6SazTswOd65u7smPtdtQ_Yh1BlFOPxgM6l_Dih5Xz8bCi8L6CnDO5Eddz4flcVThw1_Xyez2TJ5HQko8l4e7cPbH0C6sAE&ats=1405307689745&rm=14732dd80f0fc642&zw&sz=w1654-h750" width ='165' height = '45' style="padding-bottom: 2px;" />            
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+ 
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a class="padding" href="#" target="_blank"></a></li>
+        <li class="divider"></li>
+        <li><a href="/">ARGG!</a></li>
+        <li class="divider"></li>
+        <li><a href="/">ARGGG???</a></li>
+        <li class="divider"></li>
+        <li><a href="/">ARGG nevermind</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">arg</a>
+          <ul class="dropdown">
+            <li><a target="_blank" href="/">ARGG!</a></li>
+          </ul>
+        </li>      </ul>
+    </section>
+  </nav>
+ 
+<br>
+<br>
+ 
+
+<!-- First Band (Slider) -->
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="example-orbit" data-orbit>
+        <li><img src=
+        "{{ url_for('static', filename='img/line-1.jpg') }}" style="height:727.5px; width:970px">
+        </li>
+        <li><img src=
+        "{{ url_for('static', filename='img/line-2.jpg') }}" style="height:727.5px; width:970px">
+        </li>
+        <li><img src=
+        "{{ url_for('static', filename='img/line-3.jpg') }}" style="height:727.5px; width:970px">
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+    <script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/foundation.min.js')}}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
