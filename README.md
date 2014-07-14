@@ -33,10 +33,16 @@ Created log<br>
 Started work on big projects<br><br>
 
 <b>FRI 7/11/14</b><br>
+Continued work on big projects<br>
+Macaroni and Cheese and Ice Cream yayyy<br><br>
+
+<b>MON 7/14/14</b><br>
 Continued work on big projects<br><br>
 
 <h1>Other Stuff</h1>
-<a href = "https://github.com/SingleDreamer/2014_SHIP_AR"> Augmented Reality Project </a>
+<a href = "https://github.com/SingleDreamer/2014_SHIP_AR"> Augmented Reality Project </a><br>
+<a href = "https://github.com/crabalockerfishwife/motion-capture-ping-pong"> Motion Capture Project </a>
+
 
 </body>
 </html>
