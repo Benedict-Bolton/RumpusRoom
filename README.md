@@ -51,7 +51,8 @@ Doughnuts yayyy<br><br>
 
 <b>WEDS 7/16/14</b><br>
 Continued work on big projects<br>
-CONVOLUTION MATRIX [EDGE DETECTION, BLURRING, FILTERS]<br><br>
+CONVOLUTION MATRIX [EDGE DETECTION, BLURRING, FILTERS]<br>
+http://en.wikipedia.org/wiki/Sobel_operator<br><br>
 
 
 </body>
