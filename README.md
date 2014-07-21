@@ -54,6 +54,17 @@ Continued work on big projects<br>
 CONVOLUTION MATRIX [EDGE DETECTION, BLURRING, FILTERS]<br>
 http://en.wikipedia.org/wiki/Sobel_operator<br><br>
 
+<b>THURS 7/17/14</b><br>
+Continued work on big projects<br><br>
+
+<b>FRI 7/18/14</b><br>
+Continued work on big projects<br>
+CROUGHNUTS AND PIZZA YAY<br><br>
+
+<b>MON 7/21/14</b><br>
+Continued work on big projects<br>
+CLASSIFICATION [FEATURES, LOSTALISM, VAN HALEN, CLUSTERING (ex k-means clustering, k-nearest neighbor)]<br>
+COLOR QUANTIZATION<br><br>
 
 </body>
 </html>
