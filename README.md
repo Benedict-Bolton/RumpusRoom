@@ -66,5 +66,13 @@ Continued work on big projects<br>
 CLASSIFICATION [FEATURES, LOSTALISM, VAN HALEN, CLUSTERING (ex k-means clustering, k-nearest neighbor)]<br>
 COLOR QUANTIZATION<br><br>
 
+
+<b>TUES 7/22/14</b><br>
+Continued work on big projects<br>
+Start of shipmates' project work<br><br>
+
+<b>WEDS 7/23/14</b><br>
+TWO [2] APPROACHES TO BLOB DETECTION [(1)search starting at each pixel, (2)Marching Squares] <br><br>
+
 </body>
 </html>
