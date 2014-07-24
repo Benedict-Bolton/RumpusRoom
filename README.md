@@ -72,7 +72,17 @@ Continued work on big projects<br>
 Start of shipmates' project work<br><br>
 
 <b>WEDS 7/23/14</b><br>
+Continued work on big projects<br>
 TWO [2] APPROACHES TO BLOB DETECTION [(1)search starting at each pixel, (2)Marching Squares] <br><br>
+
+
+<b>THURS 7/24/14</b><br>
+Continued work on big projects<br>
+TOMMY CHEN<br>
+SCALE INVARIANT FEATURE TRANSFORM (SIFT)<br>
+SINGULAR VALUE DECOMPOSITION<br>
+RANDOM SAMPLE CONCENSUS (RANSAC)<br>
+https://www.youtube.com/watch?v=ATxU93BYWnA<br><br>
 
 </body>
 </html>
