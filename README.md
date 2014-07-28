@@ -84,5 +84,14 @@ SINGULAR VALUE DECOMPOSITION<br>
 RANDOM SAMPLE CONCENSUS (RANSAC)<br>
 https://www.youtube.com/watch?v=ATxU93BYWnA<br><br>
 
+<b>FRI 7/25/14</b><br>
+Continued work on big projects<br>
+PIRATE DAY<br>
+PIZZA YAY<br><br>
+
+<b>MON 7/28/14</b><br>
+Continued work on big projects<br><br>
+
+
 </body>
 </html>
