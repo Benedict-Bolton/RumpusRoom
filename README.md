@@ -92,6 +92,17 @@ PIZZA YAY<br><br>
 <b>MON 7/28/14</b><br>
 Continued work on big projects<br><br>
 
+<b>TUES 7/29/14</b><br>
+Continued work on big projects<br><br>
+
+<b>WEDS 7/30/14</b><br>
+Finished up big projects<br>
+CRAZY HAIR DAY<br>
+Last day is tomorrow T_T<br><br>
+
+<b>THURS 7/31/14</b><br>
+Last day T_T<br><br>
+
 
 </body>
 </html>
